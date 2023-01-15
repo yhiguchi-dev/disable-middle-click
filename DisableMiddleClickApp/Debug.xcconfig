@@ -1,0 +1,13 @@
+//
+//  Debug.xcconfig
+//  DisableMiddleClickApp
+//
+//  Created by Yuki Higuchi on 2023/01/14.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Config"
+
+PRODUCT_NAME = $(HOME) Debug
+VERSION_INFO_SUFFIX = -debug-$(BUILD_DATE)
