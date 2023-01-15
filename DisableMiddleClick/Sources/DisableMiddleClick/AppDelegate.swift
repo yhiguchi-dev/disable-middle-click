@@ -5,9 +5,9 @@
 import SwiftUI
 
 public class AppDelegate: NSObject, NSApplicationDelegate {
-    public func applicationDidFinishLaunching(_ notification: Notification) {
-        EventHandler().handleAndDisableMiddleClick {
-            NSApplication.shared.terminate(self)
-        }
+  public func applicationDidFinishLaunching(_ notification: Notification) {
+    EventHandler().handleAndDisableMiddleClick {
+      NSApplication.shared.terminate(self)
     }
+  }
 }

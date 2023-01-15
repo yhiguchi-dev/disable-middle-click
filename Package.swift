@@ -4,8 +4,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "disable-middle-click",
-    dependencies: [
-        .package(url: "https://github.com/apple/swift-format", revision: "0.50700.1"),
-    ]
+  name: "disable-middle-click",
+  dependencies: [
+    .package(url: "https://github.com/apple/swift-format", revision: "0.50700.1")
+  ]
 )
