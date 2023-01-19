@@ -16,7 +16,7 @@ public class EventHandler {
           refcon: UnsafeMutableRawPointer?
         ) -> Unmanaged<CGEvent>? in
         if [.otherMouseUp, .otherMouseDown].contains(type) {
-          event.setIntegerValueField(.mouseEventButtonNumber, value: 4)
+          event.setIntegerValueField(.mouseEventButtonNumber, value: 6)
         }
         return Unmanaged.passRetained(event)
       },
