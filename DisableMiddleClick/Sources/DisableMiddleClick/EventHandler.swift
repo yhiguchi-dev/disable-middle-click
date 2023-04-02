@@ -2,7 +2,7 @@ import SwiftUI
 
 public class EventHandler {
 
-  func handleAndDisableMiddleClick(callback: () -> Void) {
+  func handleAndDisableMiddleClick(onError: () -> Void) {
     let eventMask = CGEventMask(
       (1 << CGEventType.otherMouseUp.rawValue) | (1 << CGEventType.otherMouseDown.rawValue))
     if let matchPort = CGEvent.tapCreate(
@@ -26,7 +26,7 @@ public class EventHandler {
       CFRunLoopAddSource(CFRunLoopGetCurrent(), runLoopSource, .commonModes)
       CGEvent.tapEnable(tap: matchPort, enable: true)
     } else {
-      callback()
+      onError()
     }
   }
 }
