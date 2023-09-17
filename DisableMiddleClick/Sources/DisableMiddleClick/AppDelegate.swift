@@ -2,11 +2,11 @@
 // Created by Yuki Higuchi on 2023/01/15.
 //
 
-import SwiftUI
+import AppKit
 
 public class AppDelegate: NSObject, NSApplicationDelegate {
   public func applicationDidFinishLaunching(_ notification: Notification) {
-    EventHandler().handleAndDisableMiddleClick {
+    EventObserver().observeAndDisableMiddleClick {
       NSApplication.shared.terminate(self)
     }
   }
