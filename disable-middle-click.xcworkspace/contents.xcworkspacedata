@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:DisableMiddleClick">
+      location = "group:DisableMiddleClickApp/DisableMiddleClickApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:DisableMiddleClickApp/DisableMiddleClickApp.xcodeproj">
+      location = "group:DisableMiddleClick">
    </FileRef>
 </Workspace>

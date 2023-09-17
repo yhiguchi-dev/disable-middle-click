@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.8
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,6 +6,6 @@ import PackageDescription
 let package = Package(
   name: "disable-middle-click",
   dependencies: [
-    .package(url: "https://github.com/apple/swift-format", revision: "0.50700.1")
+    .package(url: "https://github.com/apple/swift-format", revision: "508.0.1")
   ]
 )

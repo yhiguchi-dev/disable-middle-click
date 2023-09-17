@@ -1,8 +1,8 @@
-import SwiftUI
+import CoreGraphics
 
-public class EventHandler {
+public class EventObserver {
 
-  func handleAndDisableMiddleClick(onError: () -> Void) {
+  func observeAndDisableMiddleClick(onError: () -> Void) {
     let eventMask = CGEventMask(
       (1 << CGEventType.otherMouseUp.rawValue) | (1 << CGEventType.otherMouseDown.rawValue))
     if let matchPort = CGEvent.tapCreate(
